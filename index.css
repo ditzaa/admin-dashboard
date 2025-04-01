@@ -1,3 +1,81 @@
-body {
-  background-color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --sky-blue: rgb(25, 146, 212);
+}
+
+body,
+root {
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* sidebar */
+aside {
+  align-items: center;
+  background-color: var(--sky-blue);
+  color: white;
+  height: 100%;
+  min-width: 200px;
+  padding-left: 30px;
+  width: 20vw;
+}
+
+.sidebar-header a {
+  font-weight: bold;
+}
+
+.sidebar-header {
+  display: grid;
+  align-items: center;
+  column-gap: 15px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 60px;
+}
+
+.sidebar-nav-menu {
+  align-items: center;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(5, 20px);
+  margin-bottom: 40px;
+}
+
+.sidebar-nav-menu a {
+  cursor: pointer;
+}
+
+.sidebar-nav-menu a:hover {
+  opacity: 0.5;
+}
+
+.sidebar-settings {
+  align-items: center;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(5, 20px);
+  margin-bottom: 40px;
+}
+
+.sidebar-settings a {
+  cursor: pointer;
+}
+
+.sidebar-icon {
+  min-width: 90%;
+  padding-right: 15px;
+}
+
+.sidebar-settings a:hover {
+  opacity: 0.5;
+}
+
+.sidebar-icons {
+  width: 20px;
+  padding-left: 15px;
 }
