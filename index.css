@@ -31,7 +31,7 @@ aside {
 .sidebar-header {
   display: grid;
   align-items: center;
-  column-gap: 15px;
+  column-gap: 10px;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 60px;
 }
@@ -75,7 +75,13 @@ aside {
   opacity: 0.5;
 }
 
+.sidebar-header-icon {
+  fill: white;
+  /* width: 30px; */
+}
+
 .sidebar-icons {
-  width: 20px;
+  fill: white;
   padding-left: 15px;
+  width: 20px;
 }
